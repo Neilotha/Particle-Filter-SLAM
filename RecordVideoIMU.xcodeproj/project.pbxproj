@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		425494452A3054FE00ED0533 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425494442A3054FE00ED0533 /* RecordButton.swift */; };
 		42CA5CAF2A00EEDC009B850C /* RecordVideoIMUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CA5CAE2A00EEDC009B850C /* RecordVideoIMUApp.swift */; };
 		42CA5CB12A00EEDC009B850C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CA5CB02A00EEDC009B850C /* ContentView.swift */; };
 		42CA5CB32A00EEDE009B850C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42CA5CB22A00EEDE009B850C /* Assets.xcassets */; };
 		42CA5CB62A00EEDE009B850C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42CA5CB52A00EEDE009B850C /* Preview Assets.xcassets */; };
+		42CA5CBD2A00F329009B850C /* DataRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CA5CBC2A00F329009B850C /* DataRecorder.swift */; };
+		42FD65632A385BCF00953621 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD65622A385BCF00953621 /* ToggleButton.swift */; };
+		42FD65652A386B2300953621 /* PictureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD65642A386B2300953621 /* PictureButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		422CB8E02A011B1900DD3CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		425494442A3054FE00ED0533 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		42CA5CAB2A00EEDC009B850C /* RecordVideoIMU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordVideoIMU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42CA5CAE2A00EEDC009B850C /* RecordVideoIMUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoIMUApp.swift; sourceTree = "<group>"; };
 		42CA5CB02A00EEDC009B850C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		42CA5CB22A00EEDE009B850C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42CA5CB52A00EEDE009B850C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		42CA5CBC2A00F329009B850C /* DataRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRecorder.swift; sourceTree = "<group>"; };
+		42FD65622A385BCF00953621 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		42FD65642A386B2300953621 /* PictureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,11 @@
 		42CA5CAD2A00EEDC009B850C /* RecordVideoIMU */ = {
 			isa = PBXGroup;
 			children = (
+				422CB8E02A011B1900DD3CFB /* Info.plist */,
 				42CA5CAE2A00EEDC009B850C /* RecordVideoIMUApp.swift */,
 				42CA5CB02A00EEDC009B850C /* ContentView.swift */,
+				42FD65662A386B3800953621 /* Buttons */,
+				42CA5CBC2A00F329009B850C /* DataRecorder.swift */,
 				42CA5CB22A00EEDE009B850C /* Assets.xcassets */,
 				42CA5CB42A00EEDE009B850C /* Preview Content */,
 			);
@@ -65,6 +77,16 @@
 				42CA5CB52A00EEDE009B850C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		42FD65662A386B3800953621 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				42FD65642A386B2300953621 /* PictureButton.swift */,
+				42FD65622A385BCF00953621 /* ToggleButton.swift */,
+				425494442A3054FE00ED0533 /* RecordButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425494452A3054FE00ED0533 /* RecordButton.swift in Sources */,
+				42FD65632A385BCF00953621 /* ToggleButton.swift in Sources */,
 				42CA5CB12A00EEDC009B850C /* ContentView.swift in Sources */,
+				42CA5CBD2A00F329009B850C /* DataRecorder.swift in Sources */,
+				42FD65652A386B2300953621 /* PictureButton.swift in Sources */,
 				42CA5CAF2A00EEDC009B850C /* RecordVideoIMUApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +296,14 @@
 				DEVELOPMENT_TEAM = WU68PVHKZ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecordVideoIMU/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture videos.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This App records IMU measurements";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +330,14 @@
 				DEVELOPMENT_TEAM = WU68PVHKZ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecordVideoIMU/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture videos.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This App records IMU measurements";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
